@@ -1,0 +1,39 @@
+header {
+  font-size: 15px;
+}
+header .header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+  font-family: Poppins, sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.085em;
+  line-height: 23px;
+  text-transform: uppercase;
+}
+header .function-container {
+  display: flex;
+  flex-direction: row;
+}
+header .function-container-direction {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+header .function-container-instruction {
+  display: flex;
+  flex-direction: row;
+}
+header .function-container-instruction .icon {
+  height: 50px;
+}
+header .items {
+  padding: 10px;
+  align-items: center;
+}
+
+body {
+  background-color: #fff;
+}/*# sourceMappingURL=index.css.map */

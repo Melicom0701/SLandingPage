@@ -1,0 +1,15 @@
+$main-color : #fff;
+@import 'header';
+@import 'variables.scss';
+@import 'mixins';
+@import 'footer';
+@import 'section';
+
+
+body
+{
+    background-color: $main-color;
+    
+
+}
+
