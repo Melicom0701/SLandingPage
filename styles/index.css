@@ -1,5 +1,6 @@
 header {
   font-size: 15px;
+  color: white;
 }
 header .header-container {
   display: flex;
@@ -8,10 +9,11 @@ header .header-container {
   align-items: center;
   font-weight: 500;
   font-family: Poppins, sans-serif;
-  font-size: 14px;
+  font-size: 13px;
   letter-spacing: 0.085em;
   line-height: 23px;
   text-transform: uppercase;
+  padding: 30px;
 }
 header .function-container {
   display: flex;
@@ -28,12 +30,61 @@ header .function-container-instruction {
 }
 header .function-container-instruction .icon {
   height: 50px;
+  color: rgb(255, 255, 255);
+}
+header .function-container-instruction .icon:hover {
+  background-color: rgb(255, 138, 115);
+  border-radius: 20%;
 }
 header .items {
+  display: flex;
   padding: 10px;
   align-items: center;
+  margin-left: 30px;
+}
+header .items::before {
+  content: "";
+  visibility: hidden;
+  width: 6px;
+  height: 6px;
+  margin: 10px;
+  display: block;
+  background-color: #5580ff;
+  border-radius: 50%;
+}
+header .items:hover::before {
+  visibility: visible;
+}
+
+.firstSection {
+  background: url("https://foton.qodeinteractive.com/wp-content/uploads/2018/07/home-product-img.png") center center/cover no-repeat transparent;
+  width: 100%;
+  height: 800px;
+  position: absolute;
+}
+
+.secondSection {
+  background: url("https://foton.qodeinteractive.com/wp-content/uploads/2018/06/h-product-background.jpg");
+  width: 100%;
+  height: 6000px;
+}
+
+.thirdSection {
+  background: url("https://foton.qodeinteractive.com/wp-content/uploads/2018/06/background-2.jpg");
+  width: 100%;
+  height: 500px;
+  background-repeat: no-repeat;
+}
+
+.fourthSection {
+  background-image: url(https://foton.qodeinteractive.com/wp-content/uploads/2018/06/Presentation-paralax-img-1.jpg);
+  width: 100%;
+  height: 700px;
+  background-repeat: no-repeat;
 }
 
 body {
   background-color: #fff;
+  margin: 0px;
+  padding: 0px;
 }/*# sourceMappingURL=index.css.map */

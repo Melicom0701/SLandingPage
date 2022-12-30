@@ -1,6 +1,6 @@
 header {
   font-size: 15px;
-
+  color: white;
   .header-container {
     display: flex;
     flex-direction: row;
@@ -8,11 +8,11 @@ header {
     align-items: center;
     font-weight: 500;
     font-family: Poppins,sans-serif;
-    font-size: 14px;
+    font-size: 13px;
     letter-spacing: .085em;
     line-height: 23px;
     text-transform: uppercase;
-
+    padding: 30px;
   }
   .function-container {
     display: flex;
@@ -28,11 +28,39 @@ header {
     flex-direction: row;
     .icon {
     height: 50px;
+    
+    color: rgb(255, 255, 255);
+    }
+    .icon:hover {
+      background-color: rgb(255, 138, 115);
+      border-radius: 20%;
+
+      
+      
     }
   }
   .items{
+    display: flex;
     padding: 10px;
     align-items: center;
+    margin-left: 30px;
+
+  }
+
+  .items::before{
+    content: '';
+    visibility: hidden;
+    width: 6px;
+    height: 6px;
+    margin :10px;
+    display: block;
+    background-color: #5580ff;
+    border-radius: 50%;
+  
+  }
+    .items:hover::before{
+      visibility: visible;
   }
   
 }
+
