@@ -30,14 +30,9 @@ header {
     height: 50px;
     
     color: rgb(255, 255, 255);
+    margin:10px;
     }
-    .icon:hover {
-      background-color: rgb(255, 138, 115);
-      border-radius: 20%;
-
-      
-      
-    }
+   
   }
   .items{
     display: flex;
@@ -52,7 +47,7 @@ header {
     visibility: hidden;
     width: 6px;
     height: 6px;
-    margin :10px;
+    margin :5px;
     display: block;
     background-color: #5580ff;
     border-radius: 50%;
@@ -63,4 +58,3 @@ header {
   }
   
 }
-

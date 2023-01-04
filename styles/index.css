@@ -31,10 +31,7 @@ header .function-container-instruction {
 header .function-container-instruction .icon {
   height: 50px;
   color: rgb(255, 255, 255);
-}
-header .function-container-instruction .icon:hover {
-  background-color: rgb(255, 138, 115);
-  border-radius: 20%;
+  margin: 10px;
 }
 header .items {
   display: flex;
@@ -47,7 +44,7 @@ header .items::before {
   visibility: hidden;
   width: 6px;
   height: 6px;
-  margin: 10px;
+  margin: 5px;
   display: block;
   background-color: #5580ff;
   border-radius: 50%;
@@ -61,6 +58,25 @@ header .items:hover::before {
   width: 100%;
   height: 800px;
   position: absolute;
+}
+.firstSection .wrapper {
+  display: flex;
+  padding: 5%;
+}
+.firstSection .btnWrapper {
+  display: flex;
+}
+.firstSection .leftWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.firstSection .leftWrapper .music {
+  display: flex;
+  align-items: center;
+}
+.firstSection .elements {
+  margin: 15px;
 }
 
 .secondSection {
@@ -81,6 +97,12 @@ header .items:hover::before {
   width: 100%;
   height: 700px;
   background-repeat: no-repeat;
+}
+
+.fivethSection {
+  background-color: #292933;
+  width: 100%;
+  height: 500px;
 }
 
 body {

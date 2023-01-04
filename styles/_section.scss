@@ -1,32 +1,58 @@
-.firstSection{
-    background: url("https://foton.qodeinteractive.com/wp-content/uploads/2018/07/home-product-img.png") center center / cover no-repeat transparent;
-    width: 100%;
-    height: 800px;
-    position: absolute;
-   
-}
-.secondSection{
-    background: url("https://foton.qodeinteractive.com/wp-content/uploads/2018/06/h-product-background.jpg");
-    width: 100%;
-    height: 6000px;
+.firstSection {
+  background: url('https://foton.qodeinteractive.com/wp-content/uploads/2018/07/home-product-img.png') center center / cover no-repeat transparent;
+  width: 100%;
+  height: 800px;
+  position: absolute;
+  .wrapper{
+    display: flex;
+    padding: 5%;
+  }
+  .btnWrapper
+  {
+    display: flex;
+  }
+  .leftWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   .music{
+    display: flex;
+    align-items: center;
+
+
+   }
+
+  }
+  .elements{
+    margin: 15px;
+
+  }
+  
 
 }
 
-
-.thirdSection{
-    background :url("https://foton.qodeinteractive.com/wp-content/uploads/2018/06/background-2.jpg");
-
-    width: 100%;
-    height: 500px;
-    background-repeat: no-repeat;
-   
+.secondSection {
+  background: url('https://foton.qodeinteractive.com/wp-content/uploads/2018/06/h-product-background.jpg');
+  width: 100%;
+  height: 6000px;
 }
-.fourthSection
-{
 
-    background-image: url(https://foton.qodeinteractive.com/wp-content/uploads/2018/06/Presentation-paralax-img-1.jpg);
-    width: 100%;
-    height: 700px;
-    background-repeat: no-repeat;
-   
+.thirdSection {
+  background: url('https://foton.qodeinteractive.com/wp-content/uploads/2018/06/background-2.jpg');
+
+  width: 100%;
+  height: 500px;
+  background-repeat: no-repeat;
+}
+.fourthSection {
+  background-image: url(https://foton.qodeinteractive.com/wp-content/uploads/2018/06/Presentation-paralax-img-1.jpg);
+  width: 100%;
+  height: 700px;
+  background-repeat: no-repeat;
+}
+
+.fivethSection {
+  background-color: #292933;
+  width: 100%;
+  height: 500px;
 }
