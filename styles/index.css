@@ -69,14 +69,99 @@ header .items:hover::before {
 .firstSection .leftWrapper {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
+  position: relative;
+  -webkit-animation-name: mover;
+          animation-name: mover;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
 }
 .firstSection .leftWrapper .music {
   display: flex;
   align-items: center;
 }
+@-webkit-keyframes mover {
+  0% {
+    left: 300px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+@keyframes mover {
+  0% {
+    left: 300px;
+  }
+  100% {
+    left: 0px;
+  }
+}
 .firstSection .elements {
   margin: 15px;
+}
+.firstSection .moveContent {
+  -webkit-animation-name: movement;
+          animation-name: movement;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  position: relative;
+}
+@-webkit-keyframes movement {
+  0% {
+    top: -300px;
+    left: 300px;
+  }
+  100% {
+    top: 0px;
+    left: 0px;
+  }
+}
+@keyframes movement {
+  0% {
+    top: -300px;
+    left: 300px;
+  }
+  100% {
+    top: 0px;
+    left: 0px;
+  }
+}
+.firstSection .secondPart {
+  display: flex;
+  align-items: center;
+}
+.firstSection .secondPart .elements {
+  width: 50%;
+  align-items: center;
+  align-content: center;
+  padding: 100px;
+}
+.firstSection .secondPart .seperaterLine {
+  width: 5px;
+  display: block;
+  color: #abb8c3;
+  height: 200px;
+  background-color: #abb8c3;
+}
+.firstSection .thirdPart {
+  display: flex;
+  align-content: flex-end;
+  justify-content: center;
+  align-items: center;
+  -webkit-animation-name: mover;
+          animation-name: mover;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  position: relative;
+}
+@keyframes mover {
+  0% {
+    left: 300px;
+  }
+  100% {
+    top: 0px;
+    left: 0px;
+  }
 }
 
 .secondSection {

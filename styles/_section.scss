@@ -10,11 +10,16 @@
   .btnWrapper
   {
     display: flex;
+
   }
   .leftWrapper{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
+    position: relative;
+    animation-name: mover;
+    animation-duration: 3s;
+
    .music{
     display: flex;
     align-items: center;
@@ -23,11 +28,72 @@
    }
 
   }
+  @keyframes mover{
+    0%    { left:300px;}
+    100%  { left : 0px;}
+  
+    }
+
   .elements{
     margin: 15px;
 
   }
+  .moveContent{
+  animation-name : movement;
+  animation-duration : 3s;
+  position: relative;
+
+  }
+  @keyframes movement{
+  0%    { top :-300px;left :300px;}
+  100%  { top :0px;left : 0px;}
+
+
+  }
+
+  .secondPart{
+    display:flex;
+    align-items: center;
+    .elements{
+      width: 50%;
+      align-items: center;
+      align-content: center;
+      padding: 100px;
+
+
+    }
+    .seperaterLine{
+      width: 5px;
+      display: block;
+      color: #abb8c3;
+      height: 200px;
+      background-color: #abb8c3;
+
+    }
+
+
+  }
+  .thirdPart{
+    display: flex;
+    align-content: flex-end;
+    justify-content: center;
+    align-items: center;
+    animation-name : mover;
+    animation-duration : 3s;
+    position: relative;
+
+    
+  }
+
+    @keyframes mover{
+    0%    { left :300px;}
+    100%  { top :0px;left : 0px;}
   
+  
+    }
+
+  
+
 
 }
 
