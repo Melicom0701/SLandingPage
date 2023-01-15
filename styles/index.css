@@ -69,7 +69,7 @@ header .items:hover::before {
 .firstSection .leftWrapper {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: flex-start;
   position: relative;
   -webkit-animation-name: mover;
           animation-name: mover;
@@ -79,6 +79,8 @@ header .items:hover::before {
 .firstSection .leftWrapper .music {
   display: flex;
   align-items: center;
+  position: relative;
+  top: 200px;
 }
 @-webkit-keyframes mover {
   0% {
@@ -161,6 +163,105 @@ header .items:hover::before {
   100% {
     top: 0px;
     left: 0px;
+  }
+}
+.firstSection .fourthPart {
+  display: flex;
+  justify-content: center;
+}
+.firstSection .fourthPart .elements {
+  height: 400px;
+  width: 300px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.firstSection .fourthPart .elements:hover { /* IE 9 */ /* Safari 3-8 */
+  transform: scale(1.2);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  filter: opacity(0.8) drop-shadow(0 0 0 red);
+}
+.firstSection .fourthPart .title {
+  color: #5e5398;
+  font-size: 30px;
+  font-weight: 450;
+  padding: 30px;
+}
+.firstSection .fourthPart .description {
+  margin-top: 9px;
+  font-family: Nunito, sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 300;
+  color: #716c80;
+}
+.firstSection .fivethPart {
+  display: flex;
+  justify-content: center;
+  padding: 150px;
+}
+.firstSection .sixthPart {
+  display: flex;
+  justify-content: center;
+}
+.firstSection .sixthPart .img1 {
+  height: 500px;
+}
+.firstSection .sixthPart .img2 {
+  top: 60px;
+  left: -50px;
+  position: relative;
+  height: 500px;
+}
+.firstSection .sixthPart .part1 {
+  display: flex;
+  -webkit-animation: action 1s infinite alternate;
+  animation: action 1s infinite alternate;
+}
+.firstSection .sixthPart .part2 {
+  padding: 50px;
+}
+.firstSection .sixthPart .part2 .object1 {
+  font-family: Poppins, sans-serif;
+  margin: 20px 0;
+  color: #58468c;
+  font-size: 55px;
+  line-height: 1.22em;
+  padding: 10px;
+  width: 500px;
+}
+.firstSection .sixthPart .part2 .object2 {
+  color: #7c778a;
+  font-size: 20px;
+  line-height: 31px;
+  width: 500px;
+  padding: 10px;
+}
+.firstSection .sixthPart .part2 .object3 {
+  display: flex;
+  flex-direction: row;
+  font-size: 30px;
+  font-family: Poppins, sans-serif;
+  margin: 20px 0;
+  color: #58468c;
+  padding: 30px;
+}
+@-webkit-keyframes action {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+@keyframes action {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
   }
 }
 
