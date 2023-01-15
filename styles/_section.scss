@@ -199,15 +199,146 @@
       0% { transform: translateY(0); }
       100% { transform: translateY(-10px); }
   }
+  .seventhPart {
+    margin-top: 200px;
+    grid-template-columns: auto auto auto;
+    display: grid;
   }
+  .grid_item {
+    object-fit: cover;
+    box-sizing: content-box;
+    overflow: hidden;
+    position: relative;
+  }
+  .grid_item:hover .grid_item-img {
+    transition: 0.2s linear;
+    transform: scale(1.2);
+  }
+  .grid_item:hover .content_blur {
+    transition: 0.2s linear;
+    opacity: 1;
+  }
+  .grid_item-img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    transition: 0.2s linear;
+  }
+  .content_blur {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 1.3em;
+    font-weight: 400;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s linear;
+    opacity: 0;
+  }
+  .sixthSec__above {
+    background-color: url(https://foton.qodeinteractive.com/wp-content/uploads/2018/06/Presentation-img-6.jpg);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 200px;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+  }
+  }
+  .eightPart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    .p1{
+      height: 800px;
+      width: 600px;
+      
+    }
+    .p2{
+      padding: 25px;
+    .object1{
+      font-family: Poppins,sans-serif;
+      color: #58468c;
+      font-size: 55px;
+      line-height: 1.22em;
+      width: 600px;
+    
+      width: 500px;
+    }
+    .object2{
+      color :#7c778a;
+      font-size: 20px;
+    line-height: 31px;
+    width: 600px;;
+    }
+    .object3{
 
+      display: flex;
+      flex-direction: row;
+      font-size: 30px;
+      font-family: Poppins,sans-serif;
+      color: #58468c;
+      width: 600px;
+    }
 
+  }
 }
+  .ninethPart{  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .firstPart{
+    display: flex;  
+    .items{
+      width: 400px;
+      align-items: center;
+      padding: 20px;
+      display: flex;  
+      .icon{}
+      .content{
+        padding: 20px;
+        .title{
+          color: #5e5398;
+    font-size: 30px;
+    font-weight: 450;
+          
+        }
+        .description{
+
+          font-family: Nunito, sans-serif;
+          font-size: 16px;
+          line-height: 28px;
+          font-weight: 300;
+          color: #716c80;
+        }
+      }
+    }
+    
+
+
+    }
+    .secondPart{
+      display:flex;
+    }
+  }
+}
+
+
 
 .secondSection {
   background: url('https://foton.qodeinteractive.com/wp-content/uploads/2018/06/h-product-background.jpg');
   width: 100%;
-  height: 6000px;
+  height: 6700px;
 }
 
 .thirdSection {
