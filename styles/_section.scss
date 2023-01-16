@@ -291,7 +291,65 @@
       width: 600px;
     }
 
+    
+
   }
+  .w3-border{
+    border-radius: 3px;
+  }
+  .barText{
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    z-index: 100;
+    color: #6661ac;
+    font-weight: bold;
+  }
+    #firstBar{
+      animation-name: first;
+      animation-duration: 1s;
+      border-radius: 3px;
+      width: 53%;
+    }
+    @keyframes first {
+      from {
+          width: 0%;
+      }
+      to { 
+          width: 53%;
+      }
+    }
+
+    #secondBar{
+      animation-name: second;
+      animation-duration: 1s;
+      border-radius: 3px;
+      width: 97%;
+    }
+    @keyframes second {
+      from {
+          width: 0%;
+      }
+      to { 
+          width: 97%;
+      }
+    }
+
+    #thirdBar{
+      animation-name: third;
+      animation-duration: 1s;
+      border-radius: 3px;
+      width: 92%;
+    }
+    @keyframes third {
+      from {
+          width: 0%;
+      }
+      to { 
+          width: 92%;
+      }
+    }
+
 }
   .ninethPart{  
     display: flex;

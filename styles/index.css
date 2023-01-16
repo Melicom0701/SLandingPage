@@ -355,6 +355,89 @@ header .items:hover::before {
   color: #58468c;
   width: 600px;
 }
+.firstSection .eightPart .w3-border {
+  border-radius: 3px;
+}
+.firstSection .eightPart .barText {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  z-index: 100;
+  color: #6661ac;
+  font-weight: bold;
+}
+.firstSection .eightPart #firstBar {
+  -webkit-animation-name: first;
+          animation-name: first;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  border-radius: 3px;
+  width: 53%;
+}
+@-webkit-keyframes first {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 53%;
+  }
+}
+@keyframes first {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 53%;
+  }
+}
+.firstSection .eightPart #secondBar {
+  -webkit-animation-name: second;
+          animation-name: second;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  border-radius: 3px;
+  width: 97%;
+}
+@-webkit-keyframes second {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 97%;
+  }
+}
+@keyframes second {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 97%;
+  }
+}
+.firstSection .eightPart #thirdBar {
+  -webkit-animation-name: third;
+          animation-name: third;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  border-radius: 3px;
+  width: 92%;
+}
+@-webkit-keyframes third {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 92%;
+  }
+}
+@keyframes third {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 92%;
+  }
+}
 .firstSection .ninethPart {
   display: flex;
   flex-direction: column;
